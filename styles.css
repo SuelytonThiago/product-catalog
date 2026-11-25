@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.5px solid #ccc;
+  width: 100%;
+  background-color: #efefef;
+}
+
+.logo {
+  margin: 5px;
+  font-weight: bold;
+  color: #333;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid #fff;
+  flex-direction: column;
+  background-color: #3483fa;
+}
+
+.fa-store {
+  font-size: 30px;
+}
+
+.button-theme {
+  display: flex;
+  width: 110px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  outline: 2px solid #ccc;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 0;
+  border: none;
+}
+
+.button-theme:hover {
+  filter: brightness(0.9);
+}
+
+.button-theme img {
+  width: 25px;
+  height: 25px;
+}
+
+body.dark {
+  background-color: #222;
+}
+
+.navbar.dark {
+  background-color: #333;
+  border: none;
+}
+
+.button-theme.dark {
+  background-color: #222;
+  color: #fff;
+  outline: 2px solid #000;
+}
+
+.logo.dark {
+  color: #fff;
+}
+
+.product-container {
+  width: 320px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.product {
+  width: 320px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.images img {
+  width: 320px;
+  height: 480px;
+  flex-shrink: 0;
+}
+
+.product-container button {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: bold;
+  font-size: 20px;
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  color: #333;
+  opacity: .8;
+}
+
+.product-container button:hover {
+    transition: .3s;
+    opacity: 1;
+}
+
+.right {
+  right: -10px;
+}
+
+.btnDisabled {
+display: none;
+}
+
+.price {
+    color: #50C878;
+}
+
+.legend{
+    font-weight: bold;
+    color: #333;
+}
+
+
+.description {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.catalog {
+    margin-top: 100px;
+}
+
+.item {
+    padding: 10px;
+    background-color: #efefef;
+}
